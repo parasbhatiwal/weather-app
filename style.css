@@ -49,6 +49,7 @@ body {
     background-color: rgb(0, 183, 255);
     color: white;
     font-weight: bold;
+    curser:pointer;
 }
 
 #weather-type {
