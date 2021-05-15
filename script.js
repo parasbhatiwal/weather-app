@@ -6,7 +6,7 @@ var apikey = '2c87cb9a37e7739b29266ed92ce11936'
 
 document.getElementById('findTemp').addEventListener('click', () => {
     var cityName = document.getElementById('city').value;
-    let citynameapi = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apikey}`
+    let citynameapi = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apikey}`
     fetch(citynameapi)
         .then(response => {
             return response.json();
