@@ -1,0 +1,72 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+.container {
+    margin: 100px auto;
+    width: 80%;
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    padding: 100px 0;
+    height: fit-content;
+}
+
+.search-loc {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.location-elements {
+    margin: 15px;
+}
+
+#city {
+    padding: 10px;
+    font-size: 25px;
+    outline: none;
+    border: 1px solid gray;
+    background-color: rgb(255, 255, 255);
+    color: rgb(58, 58, 58);
+}
+
+.findTemp {
+    padding: 10px;
+    font-size: 25px;
+    outline: none;
+    border: 1px solid gray;
+    background-color: rgb(0, 183, 255);
+    color: white;
+    font-weight: bold;
+}
+
+#weather-type {
+    margin: 40px auto;
+    text-align: center;
+    color: #04ff00;
+    width: 100%;
+    text-shadow: 0 0 10px rgb(165, 165, 165);
+}
+
+.show-temp {
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.show-temp h1 {
+    color: white;
+    font-size: 100px;
+    text-shadow: 0 0 10px rgb(165, 165, 165);
+}
