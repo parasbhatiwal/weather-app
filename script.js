@@ -7,6 +7,8 @@ var apikey = '2c87cb9a37e7739b29266ed92ce11936'
 document.getElementById('findTemp').addEventListener('click', () => {
     var cityName = document.getElementById('city').value;
     let citynameapi = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apikey}`
+
+    function clearValues() { document.getElementById('city').value = ''; }
     fetch(citynameapi)
         .then(response => {
             return response.json();
@@ -17,8 +19,8 @@ document.getElementById('findTemp').addEventListener('click', () => {
             const weatherType = data.weather[0].main
             document.getElementById('temp').innerHTML = `<h1>${temprature}</h1>`
             document.getElementById('weather-type').innerHTML = `<h1 id="weather-type">${weatherType}</h1>`
-
             document.getElementById('weatherimg').innerHTML = ` <img src="icons/${tempicon}.png" alt="">  `
+            clearValues()
         });
 })
 
